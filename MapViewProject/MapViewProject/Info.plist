@@ -21,5 +21,9 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Konumunuzu haritada gosterebilmek icin konum servislerine izin vermeniz gerekiyor.</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Konumunuzu haritada gosterebilmek icin konum servislerine izin vermeniz gerekiyor.</string>
 </dict>
 </plist>

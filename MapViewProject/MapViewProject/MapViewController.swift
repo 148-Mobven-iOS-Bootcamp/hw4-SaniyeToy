@@ -14,7 +14,7 @@ class MapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         checkLocationPermission()
         addLongGestureRecognizer()
     }
@@ -40,10 +40,7 @@ class MapViewController: UIViewController {
         case .authorizedAlways, .authorizedWhenInUse, .authorized:
             locationManager.requestLocation()
         case .denied, .restricted:
-            //popup gosterecegiz. go to settings butonuna basildiginda
-            //kullaniciyi uygulamamizin settings sayfasina gonder
-            
-            break
+            alert(message: "Turn on Device Location for Better Experience")
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         @unknown default:
