@@ -16,9 +16,6 @@
 		22DCA1EB278DB823000E8670 /* WebViewProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA1EA278DB823000E8670 /* WebViewProjectTests.swift */; };
 		22DCA1F5278DB823000E8670 /* WebViewProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA1F4278DB823000E8670 /* WebViewProjectUITests.swift */; };
 		22DCA1F7278DB823000E8670 /* WebViewProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA1F6278DB823000E8670 /* WebViewProjectUITestsLaunchTests.swift */; };
-		22DCA204278DBAA9000E8670 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA203278DBAA9000E8670 /* TabBarViewController.swift */; };
-		22DCA206278DBCBF000E8670 /* BackForWardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA205278DBCBF000E8670 /* BackForWardViewController.swift */; };
-		22DCA208278DBCFA000E8670 /* GoForWardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA207278DBCFA000E8670 /* GoForWardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +49,6 @@
 		22DCA1F0278DB823000E8670 /* WebViewProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DCA1F4278DB823000E8670 /* WebViewProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewProjectUITests.swift; sourceTree = "<group>"; };
 		22DCA1F6278DB823000E8670 /* WebViewProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		22DCA203278DBAA9000E8670 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		22DCA205278DBCBF000E8670 /* BackForWardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackForWardViewController.swift; sourceTree = "<group>"; };
-		22DCA207278DBCFA000E8670 /* GoForWardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoForWardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +102,6 @@
 				22DCA1D3278DB821000E8670 /* AppDelegate.swift */,
 				22DCA1D5278DB821000E8670 /* SceneDelegate.swift */,
 				22DCA1D7278DB821000E8670 /*  WebViewContainerViewController.swift */,
-				22DCA205278DBCBF000E8670 /* BackForWardViewController.swift */,
-				22DCA207278DBCFA000E8670 /* GoForWardViewController.swift */,
-				22DCA203278DBAA9000E8670 /* TabBarViewController.swift */,
 				22DCA1D9278DB822000E8670 /* Main.storyboard */,
 				22DCA1DC278DB823000E8670 /* Assets.xcassets */,
 				22DCA1DE278DB823000E8670 /* LaunchScreen.storyboard */,
@@ -267,9 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22DCA204278DBAA9000E8670 /* TabBarViewController.swift in Sources */,
-				22DCA206278DBCBF000E8670 /* BackForWardViewController.swift in Sources */,
-				22DCA208278DBCFA000E8670 /* GoForWardViewController.swift in Sources */,
 				22DCA1D8278DB821000E8670 /*  WebViewContainerViewController.swift in Sources */,
 				22DCA1D4278DB821000E8670 /* AppDelegate.swift in Sources */,
 				22DCA1D6278DB821000E8670 /* SceneDelegate.swift in Sources */,

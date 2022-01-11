@@ -10,15 +10,30 @@ import WebKit
 
 class WebViewContainerViewController: UIViewController {
 
-    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var webView: WKWebView?
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         configureWebView()
         configureActivityIndicator()
+    }
+    
+    @IBAction func backWardButton(_ sender: Any) {
+        webView?.goBack()
+    }
+    
+    @IBAction func openInSafariButton(_ sender: Any) {
+        guard let url = webView?.url else {
+            return
+        }
+        UIApplication.shared.open(url)
+    }
+        
+    @IBAction func goForWardButton(_ sender: Any) {
+        webView?.goForward()
     }
 
     var urlString = "https://www.google.com"
@@ -33,14 +48,14 @@ class WebViewContainerViewController: UIViewController {
         let configuration = WKWebViewConfiguration()
         configuration.preferences = preferences
 //        webView.configuration = configuration
-        webView.uiDelegate = self
-        webView.navigationDelegate = self
-        webView.allowsBackForwardNavigationGestures = true
-        webView.addObserver(self,
+        webView?.uiDelegate = self
+        webView?.navigationDelegate = self
+        webView?.allowsBackForwardNavigationGestures = true
+        webView?.addObserver(self,
                             forKeyPath: #keyPath(WKWebView.isLoading),
                             options: .new,
                             context: nil)
-        webView.load(urlRequest)
+        webView?.load(urlRequest)
     }
 
     func configureActivityIndicator() {
@@ -55,29 +70,11 @@ class WebViewContainerViewController: UIViewController {
                                context: UnsafeMutableRawPointer?) {
 
         if keyPath == "loading" {
-            webView.isLoading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
+            webView!.isLoading ? activityIndicator.startAnimating() : activityIndicator.stopAnimating()
         }
-
     }
-
-
-    
-    
-    func goBack() {
-           webView.goBack()
-       }
-
-       func goForward() {
-           webView.goForward()
-       }
-
-       func openInSafari() {
-           guard let url = webView.url else {
-               return
-           }
-           UIApplication.shared.open(url)
-       }
 }
+
 
 extension WebViewContainerViewController: WKNavigationDelegate {
 

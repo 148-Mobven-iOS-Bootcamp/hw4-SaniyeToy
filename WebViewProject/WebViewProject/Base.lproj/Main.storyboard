@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dJj-3q-Wik">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CFm-ql-dFH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,76 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="ClV-Ip-roA">
-            <objects>
-                <viewController storyboardIdentifier="BackForWard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zq5-7B-ftN" customClass="BackForWardViewController" customModule="WebViewProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zhE-u5-CXi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZo-7p-TK8">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Oie-Nh-BbH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="xZo-7p-TK8" firstAttribute="leading" secondItem="Oie-Nh-BbH" secondAttribute="leading" id="FIy-2W-Tpr"/>
-                            <constraint firstItem="Oie-Nh-BbH" firstAttribute="bottom" secondItem="xZo-7p-TK8" secondAttribute="bottom" id="Sme-M7-WtR"/>
-                            <constraint firstItem="xZo-7p-TK8" firstAttribute="top" secondItem="Oie-Nh-BbH" secondAttribute="top" id="zc0-pY-3GI"/>
-                            <constraint firstItem="Oie-Nh-BbH" firstAttribute="trailing" secondItem="xZo-7p-TK8" secondAttribute="trailing" id="zsA-tp-7Dj"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="9zQ-LW-LB2"/>
-                    <connections>
-                        <outlet property="backWebView" destination="xZo-7p-TK8" id="YMA-pD-2sT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yiq-us-5iK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="904" y="684"/>
-        </scene>
-        <!--Go For Ward View Controller-->
-        <scene sceneID="aMk-Mg-qI8">
-            <objects>
-                <viewController storyboardIdentifier="GoForWard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="q77-Sd-gaF" customClass="GoForWardViewController" customModule="WebViewProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nSY-D0-ehO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58Y-y6-4qR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Okr-tI-1S9"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="58Y-y6-4qR" firstAttribute="leading" secondItem="Okr-tI-1S9" secondAttribute="leading" id="0lz-gA-Nb4"/>
-                            <constraint firstItem="Okr-tI-1S9" firstAttribute="bottom" secondItem="58Y-y6-4qR" secondAttribute="bottom" id="5T0-hZ-x5O"/>
-                            <constraint firstItem="58Y-y6-4qR" firstAttribute="top" secondItem="Okr-tI-1S9" secondAttribute="top" id="OUt-YG-G2P"/>
-                            <constraint firstItem="Okr-tI-1S9" firstAttribute="trailing" secondItem="58Y-y6-4qR" secondAttribute="trailing" id="zzU-9Y-fKm"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="goWebView" destination="58Y-y6-4qR" id="zuO-kH-cYP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4jl-hu-Um9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2120" y="244"/>
-        </scene>
-        <!--Item 1-->
+        <!--webview-->
         <scene sceneID="8ew-hY-Tfn">
             <objects>
                 <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CFm-ql-dFH" customClass="WebViewContainerViewController" customModule="WebViewProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -85,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EmX-SY-PhC">
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EmX-SY-PhC">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -93,50 +24,84 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Wrl-0j-62Z">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Wrl-0j-62Z">
                                 <rect key="frame" x="197" y="446" width="20" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="FYI-GO-q2X"/>
+                                </constraints>
                             </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rK-eD-h68">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items/>
+                            </toolbar>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dCd-lZ-J7s">
+                                <rect key="frame" x="0.0" y="821" width="414" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSu-0c-3Nc">
+                                        <rect key="frame" x="0.0" y="0.0" width="50.5" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="backWardButton:" destination="CFm-ql-dFH" eventType="touchUpInside" id="nQ4-Yo-Msv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Up-h4W">
+                                        <rect key="frame" x="184.5" y="0.0" width="45" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="safari.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="openInSafariButton:" destination="CFm-ql-dFH" eventType="touchUpInside" id="rf3-vR-ECK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndv-tR-rlR">
+                                        <rect key="frame" x="363.5" y="0.0" width="50.5" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="goForWardButton:" destination="CFm-ql-dFH" eventType="touchUpInside" id="6ba-0F-pY5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2uv-my-OaT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="EmX-SY-PhC" firstAttribute="top" secondItem="2uv-my-OaT" secondAttribute="top" id="8Hs-zh-jr1"/>
-                            <constraint firstItem="EmX-SY-PhC" firstAttribute="leading" secondItem="2uv-my-OaT" secondAttribute="leading" id="Hhb-Hg-NLh"/>
-                            <constraint firstItem="2uv-my-OaT" firstAttribute="trailing" secondItem="EmX-SY-PhC" secondAttribute="trailing" id="WfK-g8-40f"/>
-                            <constraint firstItem="2uv-my-OaT" firstAttribute="bottom" secondItem="EmX-SY-PhC" secondAttribute="bottom" id="aE5-sX-Yhp"/>
+                            <constraint firstItem="EmX-SY-PhC" firstAttribute="top" secondItem="2uv-my-OaT" secondAttribute="top" id="3KJ-cT-xKf"/>
+                            <constraint firstItem="Wrl-0j-62Z" firstAttribute="top" secondItem="2uv-my-OaT" secondAttribute="top" constant="402" id="6pm-Wj-1zQ"/>
+                            <constraint firstItem="EmX-SY-PhC" firstAttribute="leading" secondItem="2uv-my-OaT" secondAttribute="leading" id="BsB-cG-MvS"/>
+                            <constraint firstItem="EmX-SY-PhC" firstAttribute="leading" secondItem="2rK-eD-h68" secondAttribute="leading" id="EyM-rn-LQh"/>
+                            <constraint firstItem="EmX-SY-PhC" firstAttribute="top" secondItem="2uv-my-OaT" secondAttribute="top" id="K52-SH-mbF"/>
+                            <constraint firstItem="Wrl-0j-62Z" firstAttribute="centerX" secondItem="2rK-eD-h68" secondAttribute="centerX" id="Pub-G4-Ret"/>
+                            <constraint firstItem="EmX-SY-PhC" firstAttribute="leading" secondItem="2uv-my-OaT" secondAttribute="leading" id="Tqr-LV-0uf"/>
+                            <constraint firstItem="2rK-eD-h68" firstAttribute="top" secondItem="EmX-SY-PhC" secondAttribute="bottom" id="Xvi-8c-aoA"/>
+                            <constraint firstItem="dCd-lZ-J7s" firstAttribute="top" secondItem="EmX-SY-PhC" secondAttribute="bottom" constant="8" id="XxB-DF-cRt"/>
+                            <constraint firstItem="2rK-eD-h68" firstAttribute="bottom" secondItem="2uv-my-OaT" secondAttribute="bottom" id="aDN-pR-mHe"/>
+                            <constraint firstItem="2rK-eD-h68" firstAttribute="trailing" secondItem="dCd-lZ-J7s" secondAttribute="trailing" id="bYR-Kq-c0N"/>
+                            <constraint firstItem="2rK-eD-h68" firstAttribute="leading" secondItem="dCd-lZ-J7s" secondAttribute="leading" id="gkW-1F-htz"/>
+                            <constraint firstItem="EmX-SY-PhC" firstAttribute="centerX" secondItem="72f-dz-wZJ" secondAttribute="centerX" id="h1f-Yl-T5W"/>
+                            <constraint firstItem="EmX-SY-PhC" firstAttribute="trailing" secondItem="dCd-lZ-J7s" secondAttribute="trailing" id="iPC-Ms-b7u"/>
+                            <constraint firstItem="EmX-SY-PhC" firstAttribute="trailing" secondItem="2uv-my-OaT" secondAttribute="trailing" id="jy4-1L-qjH"/>
+                            <constraint firstItem="2rK-eD-h68" firstAttribute="bottom" secondItem="dCd-lZ-J7s" secondAttribute="bottom" id="oCk-Qe-EzS"/>
+                            <constraint firstItem="2rK-eD-h68" firstAttribute="top" secondItem="EmX-SY-PhC" secondAttribute="bottom" id="wM9-if-TK7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Ckm-d8-31z"/>
+                    <tabBarItem key="tabBarItem" title="webview" image="pencil" catalog="system" id="Ckm-d8-31z"/>
                     <connections>
-                        <outlet property="activityIndicator" destination="Wrl-0j-62Z" id="9js-cE-F7n"/>
-                        <outlet property="webView" destination="EmX-SY-PhC" id="WdI-v3-jAp"/>
+                        <outlet property="activityIndicator" destination="Wrl-0j-62Z" id="hyv-vf-3yO"/>
+                        <outlet property="webView" destination="EmX-SY-PhC" id="gpB-HZ-Mwq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZg-af-nKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="-422.54464285714283"/>
         </scene>
-        <!--Tabb Bar View Controller-->
-        <scene sceneID="CL2-n9-PHb">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xIX-Oi-U7J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tabBarController id="dJj-3q-Wik" customClass="TabbBarViewController" customModule="WebViewProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YaZ-mg-LZm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="CFm-ql-dFH" kind="relationship" relationship="viewControllers" id="p3b-mB-57S"/>
-                        <segue destination="Zq5-7B-ftN" kind="relationship" relationship="viewControllers" id="Tvj-BI-CYD"/>
-                    </connections>
-                </tabBarController>
-            </objects>
-            <point key="canvasLocation" x="8" y="168"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="backward.fill" catalog="system" width="128" height="79"/>
+        <image name="forward.fill" catalog="system" width="128" height="79"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="safari.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
