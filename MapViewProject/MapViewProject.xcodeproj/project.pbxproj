@@ -93,10 +93,10 @@
 		22DCA192278D7338000E8670 /* MapViewProject */ = {
 			isa = PBXGroup;
 			children = (
-				22DCA193278D7338000E8670 /* AppDelegate.swift */,
-				22DCA195278D7338000E8670 /* SceneDelegate.swift */,
 				22DCA197278D7338000E8670 /* MapViewController.swift */,
 				22DCA1C3278D76FE000E8670 /* AlertHelper.swift */,
+				22DCA193278D7338000E8670 /* AppDelegate.swift */,
+				22DCA195278D7338000E8670 /* SceneDelegate.swift */,
 				22DCA199278D7338000E8670 /* Main.storyboard */,
 				22DCA19C278D733A000E8670 /* Assets.xcassets */,
 				22DCA19E278D733A000E8670 /* LaunchScreen.storyboard */,
