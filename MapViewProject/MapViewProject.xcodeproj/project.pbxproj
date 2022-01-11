@@ -13,6 +13,7 @@
 		22DCA19B278D7338000E8670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DCA199278D7338000E8670 /* Main.storyboard */; };
 		22DCA19D278D733A000E8670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DCA19C278D733A000E8670 /* Assets.xcassets */; };
 		22DCA1A0278D733A000E8670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DCA19E278D733A000E8670 /* LaunchScreen.storyboard */; };
+		22DCA1C4278D76FE000E8670 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA1C3278D76FE000E8670 /* AlertHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		22DCA1A1278D733A000E8670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22DCA1A6278D733A000E8670 /* MapViewProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DCA1B0278D733A000E8670 /* MapViewProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DCA1C3278D76FE000E8670 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				22DCA193278D7338000E8670 /* AppDelegate.swift */,
 				22DCA195278D7338000E8670 /* SceneDelegate.swift */,
 				22DCA197278D7338000E8670 /* MapViewController.swift */,
+				22DCA1C3278D76FE000E8670 /* AlertHelper.swift */,
 				22DCA199278D7338000E8670 /* Main.storyboard */,
 				22DCA19C278D733A000E8670 /* Assets.xcassets */,
 				22DCA19E278D733A000E8670 /* LaunchScreen.storyboard */,
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DCA1C4278D76FE000E8670 /* AlertHelper.swift in Sources */,
 				22DCA198278D7338000E8670 /* MapViewController.swift in Sources */,
 				22DCA194278D7338000E8670 /* AppDelegate.swift in Sources */,
 				22DCA196278D7338000E8670 /* SceneDelegate.swift in Sources */,
