@@ -31,6 +31,7 @@ extension UIViewController {
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
         
+        //Alert message font and color settings
         let messageAttributed = NSMutableAttributedString(
             string: alertController.message!,
             attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18),
@@ -39,7 +40,7 @@ extension UIViewController {
         alertController.setValue(messageAttributed, forKey: "attributedMessage")
         
         
-        
+        //Alert View settings
         let subview = alertController.view.subviews.first! as UIView
         let alertContentView = subview.subviews.first!.subviews.first! as UIView
         alertContentView.backgroundColor = .darkGray

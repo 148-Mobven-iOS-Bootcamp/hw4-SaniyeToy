@@ -19,18 +19,18 @@ class WebViewContainerViewController: UIViewController {
         configureWebView()
         configureActivityIndicator()
     }
-    
+    //When click the button go back
     @IBAction func backWardButton(_ sender: Any) {
         webView?.goBack()
     }
-    
+    //When click the button open in safari
     @IBAction func openInSafariButton(_ sender: Any) {
         guard let url = webView?.url else {
             return
         }
         UIApplication.shared.open(url)
     }
-    
+    //When click the button go forward
     @IBAction func goForWardButton(_ sender: Any) {
         webView?.goForward()
     }
@@ -42,7 +42,7 @@ class WebViewContainerViewController: UIViewController {
         preferences.javaScriptCanOpenWindowsAutomatically = false
         let configuration = WKWebViewConfiguration()
         configuration.preferences = preferences
-        //      webView.configuration = configuration
+        //webView.configuration = configuration
         webView?.uiDelegate = self
         webView?.navigationDelegate = self
         webView?.allowsBackForwardNavigationGestures = true
@@ -51,7 +51,9 @@ class WebViewContainerViewController: UIViewController {
                              options: .new,
                              context: nil)
         // webView?.load(urlRequest)
+        //set html code font and size
         let fontSetting = "<span style=\"font-family: \("PingFangSC-Light");font-size: \(40)\"</span>"
+        //Display html code with font settings
         webView?.loadHTMLString(fontSetting + HTMLCodeString.mobvenHTML.rawValue, baseURL: nil)
     }
     

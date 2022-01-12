@@ -40,6 +40,7 @@ class MapViewController: UIViewController {
         case .authorizedAlways, .authorizedWhenInUse, .authorized:
             locationManager.requestLocation()
         case .denied, .restricted:
+            //call alert
             alert(message: "Turn on Device Location for Better Experience")
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
