@@ -13,13 +13,11 @@ class WebViewContainerViewController: UIViewController {
     @IBOutlet weak var webView: WKWebView?
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
-   
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureWebView()
         configureActivityIndicator()
-       
     }
     
     @IBAction func backWardButton(_ sender: Any) {
@@ -37,18 +35,14 @@ class WebViewContainerViewController: UIViewController {
         webView?.goForward()
     }
 
-    var urlString = "https://www.google.com"
-
     func configureWebView() {
-        guard let url = URL(string: urlString) else { return }
+        guard let url = URL(string: HTMLCodeString.googleString.rawValue) else { return }
         let urlRequest = URLRequest(url: url)
-
         let preferences = WKPreferences()
         preferences.javaScriptCanOpenWindowsAutomatically = false
-
         let configuration = WKWebViewConfiguration()
         configuration.preferences = preferences
-//        webView.configuration = configuration
+//      webView.configuration = configuration
         webView?.uiDelegate = self
         webView?.navigationDelegate = self
         webView?.allowsBackForwardNavigationGestures = true
@@ -57,7 +51,7 @@ class WebViewContainerViewController: UIViewController {
                             options: .new,
                             context: nil)
        // webView?.load(urlRequest)
-        let fontSetting = "<span style=\"font-family: \(HTMLCodeString.fontName);font-size: \(40)\"</span>"
+        let fontSetting = "<span style=\"font-family: \("PingFangSC-Light");font-size: \(40)\"</span>"
         webView?.loadHTMLString(fontSetting + HTMLCodeString.mobvenHTML.rawValue, baseURL: nil)
     }
 
