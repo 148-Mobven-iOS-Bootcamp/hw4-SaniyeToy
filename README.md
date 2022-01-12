@@ -1,21 +1,17 @@
-### This applications that I created Calculator and Date app
+### This applications that I created WebView and MapView Projects
 
 1. [Features](#Features)
 2. [Screen Shots](#ScreenShots)
 3. [Communication](#Communication)
 
 ## Features<a name="Features"></a>
-### Calculator
-- Designed based on current iOS design
-- There are CE,C,log,Square Root, Four basic operation .
-- Serial processing possible
-
-### What Day Is Today
-- There are 5 buttons where you can get information about today's history.
-- Day,Month,Year and as a bonus, you can also find out what day we are on.
-- What Day Is Today button gives full date
-- The date on the top label as you can see from the buttons
- 
+### Webview Project
+- HTML Code I Created includes Mobven about us page taken from mobven's linkedin page
+- There are open in safari, back and forward buttons in the application.
+- Webview app has settings for changing font and size of HTML code
+### Mapview Project
+- When the Mapview app is opened, it asks for location permission. it brings up a warning message on the screen if permission is denied or restricted permission is granted
+- This alert contains two options : cancel and go to settings
 
 ## Screen Shots <a name="ScreenShots"></a>
  <table>
