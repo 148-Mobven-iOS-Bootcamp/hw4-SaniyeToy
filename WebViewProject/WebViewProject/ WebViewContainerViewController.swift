@@ -19,6 +19,7 @@ class WebViewContainerViewController: UIViewController {
 
         configureWebView()
         configureActivityIndicator()
+       
     }
     
     @IBAction func backWardButton(_ sender: Any) {
@@ -55,12 +56,14 @@ class WebViewContainerViewController: UIViewController {
                             forKeyPath: #keyPath(WKWebView.isLoading),
                             options: .new,
                             context: nil)
-        webView?.load(urlRequest)
+       // webView?.load(urlRequest)
+        let fontSetting = "<span style=\"font-family: \(HTMLCodeString.fontName);font-size: \(40)\"</span>"
+        webView?.loadHTMLString(fontSetting + HTMLCodeString.mobvenHTML.rawValue, baseURL: nil)
     }
 
     func configureActivityIndicator() {
         activityIndicator.style = .large
-        activityIndicator.color = .red
+        activityIndicator.color = .systemMint
         activityIndicator.hidesWhenStopped = true
     }
 

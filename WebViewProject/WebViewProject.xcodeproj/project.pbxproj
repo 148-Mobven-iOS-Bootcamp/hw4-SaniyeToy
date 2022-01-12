@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221F3EEB278EBED400DB27E0 /* HTMLCodeString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221F3EEA278EBED400DB27E0 /* HTMLCodeString.swift */; };
 		22DCA1D4278DB821000E8670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA1D3278DB821000E8670 /* AppDelegate.swift */; };
 		22DCA1D6278DB821000E8670 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA1D5278DB821000E8670 /* SceneDelegate.swift */; };
 		22DCA1D8278DB821000E8670 /*  WebViewContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DCA1D7278DB821000E8670 /*  WebViewContainerViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221F3EEA278EBED400DB27E0 /* HTMLCodeString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLCodeString.swift; sourceTree = "<group>"; };
 		22DCA1D0278DB821000E8670 /* WebViewProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebViewProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DCA1D3278DB821000E8670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22DCA1D5278DB821000E8670 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				22DCA1D3278DB821000E8670 /* AppDelegate.swift */,
 				22DCA1D5278DB821000E8670 /* SceneDelegate.swift */,
 				22DCA1D7278DB821000E8670 /*  WebViewContainerViewController.swift */,
+				221F3EEA278EBED400DB27E0 /* HTMLCodeString.swift */,
 				22DCA1D9278DB822000E8670 /* Main.storyboard */,
 				22DCA1DC278DB823000E8670 /* Assets.xcassets */,
 				22DCA1DE278DB823000E8670 /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				22DCA1D8278DB821000E8670 /*  WebViewContainerViewController.swift in Sources */,
 				22DCA1D4278DB821000E8670 /* AppDelegate.swift in Sources */,
+				221F3EEB278EBED400DB27E0 /* HTMLCodeString.swift in Sources */,
 				22DCA1D6278DB821000E8670 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
