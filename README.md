@@ -1,11 +1,41 @@
-# HW4
+### This applications that I created Calculator and Date app
 
-## Ödev 1: 
-Bu hafta geliştirdiğimiz projedeki webView ekranında 
-- toolBar’a goForward, goBackward ve open in safari butonları ve özellikleri eklenecektir.
-- string içerisine yazılmış bir html kodunun gösterilmesi sağlanacaktır.
-- default bulunan font değiştirilerek html’in farklı bir fontta gösterilmesi sağlanacaktır. 
+1. [Features](#Features)
+2. [Screen Shots](#ScreenShots)
+3. [Communication](#Communication)
 
-## Ödev 2: 
-Bu hafta geliştirdiğimiz projedeki mapView ekranında
-- locationAuthorization denied veya restricted ise kullanıcıya extension ile yazılmış bir alertView gösterilecektir. alertView’da cancel ve go to settings butonları bulunacaktır. go to settings butonuna basıldığında kullanıcı geliştirdiğimiz uygulama ayarları ekranına yönlendirilecektir.
+## Features<a name="Features"></a>
+### Calculator
+- Designed based on current iOS design
+- There are CE,C,log,Square Root, Four basic operation .
+- Serial processing possible
+
+### What Day Is Today
+- There are 5 buttons where you can get information about today's history.
+- Day,Month,Year and as a bonus, you can also find out what day we are on.
+- What Day Is Today button gives full date
+- The date on the top label as you can see from the buttons
+ 
+
+## Screen Shots <a name="ScreenShots"></a>
+ <table>
+  <tr>
+    <td>What Day Is Today</td>
+    <td>Calculator</td>
+
+  </tr>
+  <tr>
+   <td><img src="https://user-images.githubusercontent.com/75203610/149124392-8737d3af-0863-438c-941f-40f1d3b91300.png" width=250 height=480></td>
+    <td><img src="https://user-images.githubusercontent.com/75203610/149124479-978ad6f9-5cfc-4dc8-b59b-e36941c81109.png" width=250 height=480></td>
+
+  </tr>
+ </table>
+
+
+## Communication <a name="Communication"></a>
+- [GitHub](https://github.com/SaniyeToy)
+- [Linkedln](https://www.linkedin.com/in/saniye-toy/)
+
+
+
+
