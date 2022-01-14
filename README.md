@@ -8,6 +8,7 @@
 ### Webview Project
 - HTML Code I Created includes Mobven about us page taken from mobven's linkedin page
 - There are open in safari, back and forward buttons in the application.
+- As a bonus, I added a go to other side button. can switch from the static screen I created to google and from google to the about us screen
 - Webview app has settings for changing font and size of HTML code
 ### Mapview Project
 - When the Mapview app is opened, it asks for location permission. it brings up a warning message on the screen if permission is denied or restricted permission is granted
