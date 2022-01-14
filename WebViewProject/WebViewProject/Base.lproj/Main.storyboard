@@ -37,7 +37,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dCd-lZ-J7s">
                                 <rect key="frame" x="0.0" y="821" width="414" height="41"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSu-0c-3Nc">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSu-0c-3Nc" userLabel="Back">
                                         <rect key="frame" x="0.0" y="0.0" width="50.5" height="41"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system"/>
@@ -45,20 +45,28 @@
                                             <action selector="backWardButton:" destination="CFm-ql-dFH" eventType="touchUpInside" id="nQ4-Yo-Msv"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Up-h4W">
-                                        <rect key="frame" x="184.5" y="0.0" width="45" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndv-tR-rlR" userLabel="GoForWard">
+                                        <rect key="frame" x="124.5" y="0.0" width="50.5" height="41"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="goForWardButton:" destination="CFm-ql-dFH" eventType="touchUpInside" id="6ba-0F-pY5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZgH-Up-h4W" userLabel="OpenInSafari">
+                                        <rect key="frame" x="248.5" y="0.0" width="45" height="41"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="safari.fill" catalog="system"/>
                                         <connections>
                                             <action selector="openInSafariButton:" destination="CFm-ql-dFH" eventType="touchUpInside" id="rf3-vR-ECK"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndv-tR-rlR">
-                                        <rect key="frame" x="363.5" y="0.0" width="50.5" height="41"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="le7-Yg-pBN" userLabel="GotoOtherSide">
+                                        <rect key="frame" x="367.5" y="0.0" width="46.5" height="41"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="arrowshape.turn.up.forward.fill" catalog="system"/>
                                         <connections>
-                                            <action selector="goForWardButton:" destination="CFm-ql-dFH" eventType="touchUpInside" id="6ba-0F-pY5"/>
+                                            <action selector="goToOtherSide:" destination="CFm-ql-dFH" eventType="touchUpInside" id="oqe-Sk-ziL"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -98,6 +106,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowshape.turn.up.forward.fill" catalog="system" width="128" height="106"/>
         <image name="backward.fill" catalog="system" width="128" height="79"/>
         <image name="forward.fill" catalog="system" width="128" height="79"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
